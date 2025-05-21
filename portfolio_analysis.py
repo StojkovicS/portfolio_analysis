@@ -1,7 +1,7 @@
 ### Preparatory work
 
 
-# Importing libraries
+# Libs
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,21 +20,19 @@ stock_prices_df
 
 
 ####################################################################################################################################################################################
-# 1. Capture the Axes returned by DataFrame.plot()
+
 ax = stock_prices_df.plot(
     title="FAANG stock prices from years 2020–2023",
     ylabel="Price (USD)"
 )
 
-# 2. Turn off the top and right spines
+# turn off the top and right spines
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 
-# (Optional) tighten up the layout
+# display
 plt.tight_layout()
 plt.show()
-
-
 
 
 
